@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #011f3f;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
+}
+
+#level-title {
+  font-size: 3.5rem;
+  text-align: center;
+  line-height: 1.25;
+
+  margin-bottom: 5rem;
+}
+
+.wrapper--narrow {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+
+  gap: 5rem;
+}
+
+.btn {
+  height: 250px;
+  width: 250px;
+  border: 10px solid #000;
+  border-radius: 2.5rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.game-over {
+  background-color: red;
+  color: #fff;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
